@@ -66,11 +66,9 @@ export default class App extends React.Component{
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.6)' }}>
               <View style={{ backgroundColor: '#FFF', padding: 30, borderRadius: 10 }}>
                 <Text style={{ fontSize: 22 }}>{this.state.resultado}</Text>
-
                 <TouchableOpacity
                   onPress={() => this.setState({ modalVisible: false })}
-                  style={{ marginTop: 20 }}
-                >
+                  style={{ marginTop: 20 }}>
                   <Text style={{ color: 'red' }}>Fechar</Text>
                 </TouchableOpacity>
               </View>
